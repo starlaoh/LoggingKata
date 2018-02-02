@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using log4net;
 using System.IO;
+using Geolocation;
 
 namespace LoggingKata
 {
@@ -20,6 +21,7 @@ namespace LoggingKata
             {
                 Console.WriteLine("You must provide a filename as an argument");
                 Logger.Fatal("Cannot import without filename specified as an argument");
+                Console.ReadLine();
                 return;
             }
 
@@ -30,7 +32,12 @@ namespace LoggingKata
 
             //TODO:  Find the two TacoBells in Alabama that are the furthurest from one another.
             //HINT:  You'll need two nested forloops
-
+            /*for ( init; condition; increment ) {
+                for ( init; condition; increment ) {
+                    statement(s);
+                   }
+                    statement(s);
+                   } */
         }
     }
 }

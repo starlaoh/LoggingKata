@@ -14,6 +14,13 @@ namespace LoggingKata.Test
         public void ShouldParseLine()
         {
             //TODO: Complete ShouldParseLine
+            //Arrange 
+
+
+            //Act
+
+            //Assert
+            Assert.IsNotNull(result);
         }
     }
 }
