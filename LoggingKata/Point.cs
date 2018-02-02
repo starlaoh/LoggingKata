@@ -2,12 +2,7 @@
 {
     public struct Point
     {
-        public Point(double lattitude, double longitude) : this();
-        {
-            Latitude = lattitude;
-            Longitude = longitude;
-        }
-        double Longitude { get; set; }
-        double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
     }
 }
