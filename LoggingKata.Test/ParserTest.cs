@@ -45,7 +45,7 @@ namespace LoggingKata.Test
         public void ShouldParseString()
         {
             //Arrange
-            const string line = "-84.677017, 34.073638, \"Taco Bell Acwort... (Free trial * Add to Cart for a full POI info)"";
+            const string line = "-84.677017, 34.073638, \"Taco Bell Acwort... (Free trial * Add to Cart for a full POI info)";
             var parser = new TacoParser();
 
             //Act
