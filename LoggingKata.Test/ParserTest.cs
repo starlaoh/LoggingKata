@@ -38,7 +38,21 @@ namespace LoggingKata.Test
             var result = parser.Parse(line);
 
             //Assert
-            Assert.IsNull(result, "Should return null unless we have both the lat and long");
+            Assert.IsNull(result, "Should return null unless we have both the lat and lon");
+        }
+
+        [Test]
+        public void ShouldParseString()
+        {
+            //Arrange
+            const string line = "-84.677017, 34.073638, \"Taco Bell Acwort... (Free trial * Add to Cart for a full POI info)"";
+            var parser = new TacoParser();
+
+            //Act
+            var result = parser.Parse(line);
+
+            //Assert
+            Assert.IsNotNull(result);
         }
     }
 }
