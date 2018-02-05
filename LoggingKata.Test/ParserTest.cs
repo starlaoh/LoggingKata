@@ -54,5 +54,23 @@ namespace LoggingKata.Test
             //Assert
             Assert.IsNotNull(result);
         }
+
+        /*[Test]
+        public void ShouldNotParse()
+        {
+            //Arrange
+            var parser = new TacoParser();
+            var nonParseValues = new[] {null, "", "-84.67701, Testing", "Testing, -84.67701"};
+
+            //Act
+            foreach (var val in nonParseValues)
+            {
+                var result = parser.Parse(val);
+            }
+
+            //Assert
+            Assert.IsNull(result, $"{result} should be null");*/
+        }
     }
 }
+

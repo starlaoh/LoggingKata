@@ -10,11 +10,6 @@ namespace LoggingKata
     /// </summary>
     public class TacoParser
     {
-        public TacoParser()
-        {
-
-        }
-
         private static readonly ILog Logger =
             LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -26,7 +21,7 @@ namespace LoggingKata
 
             if (cells.Length < 2)
             {
-                Console.WriteLine("Something went wrong");
+                Logger.Warn("Missing a lat or lon");
                 return null; // Log that and return null
             }
 
@@ -50,7 +45,7 @@ namespace LoggingKata
                 Name = cells.Length > 2 ? cells[2] : null,
                 Location = new Point { Latitude = lat, Longitude = lon }
             };
-            
+
             return tacoBell;
         }
     }
