@@ -29,6 +29,9 @@ namespace LoggingKata
 
             var locations = lines.Select(line => parser.Parse(line));
 
+            ITrackable locA = null;
+            ITrackable locB = null; 
+
             foreach (var location in locations)
             {
                 Console.WriteLine("location: " + location.Name); // Create two `ITrackable` variables with initial values of `null`. These will be used to store your two taco bells that are the furthest from each other.
@@ -64,8 +67,7 @@ namespace LoggingKata
           
 
             // If the distance is greater than the currently saved distance, update the distance and the two `ITrackable` variables you set above
-            if (distance > x) something : something;
-
+            if (result > distance) locA : locB;
 
             return TacoBell; // Once you've looped through everything, you've found the two Taco Bells furthest away from each other.
 
